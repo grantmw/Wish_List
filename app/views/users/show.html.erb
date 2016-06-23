@@ -1,0 +1,12 @@
+<h1> <%= @user.user_name %>'s wishlists: </h1>
+
+<table>
+ 
+  <% @wishlists.each do |wishlist| %>
+    <tr>
+
+      <td><%= wishlist.title %></td>
+
+    </tr>
+  <% end %>
+</table>
