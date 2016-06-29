@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   resources :users do
     resources :wishlists
   end
+
+  resources :wishlists do 
+    resources :presents 
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
