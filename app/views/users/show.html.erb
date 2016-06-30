@@ -4,9 +4,9 @@
  
   <% @wishlists.each do |wishlist| %>
     <tr>
+      <td><%= link_to "#{wishlist.title}", user_wishlist_path(@user, wishlist)%>
 
-      <td><%= wishlist.title %></td>
-
+      </td>
     </tr>
   <% end %>
 </table>

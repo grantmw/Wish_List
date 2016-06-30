@@ -1,0 +1,13 @@
+<h1> Wishlist: <%= @wishlist.title %>  </h1>
+
+<table>
+ 
+  <% @presents.each do |present| %>
+    <tr>
+
+      <td><%= link_to "#{present.title}", user_wishlist_present_path(@wishlist.user,@wishlist, present) %></td>
+      
+
+    </tr>
+  <% end %>
+</table>

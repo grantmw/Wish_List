@@ -17,8 +17,12 @@ ActiveRecord::Schema.define(version: 20160629143241) do
   enable_extension "plpgsql"
 
   create_table "presents", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.string   "description"
+    t.integer  "wishlist_id"
+    t.float    "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
